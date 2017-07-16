@@ -65,7 +65,8 @@ var AsrPlugin = {
 	},
 
 	setAudioFormat: function(fileType) {
-		this.options["x-task-config"] += fileType;		
+
+		this.options["x-task-config"] = "capkey=asr.cloud.freetalk,audioformat=" + fileType;		
 	},
 	
 	recog: function(data, type){

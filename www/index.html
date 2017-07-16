@@ -57,7 +57,7 @@
                     reader.onloadend = function() {
                         console.log("Successful file read: " + this.result);
                         res = AsrPlugin.recog(this.result, fileType);
-
+                        
                         console.log(res);
                         alert(res); 
                     };
